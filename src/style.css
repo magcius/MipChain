@@ -1,0 +1,50 @@
+html {
+  color-scheme: light dark;
+  font-family: system-ui;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+}
+
+body {
+  width: 1200px;
+}
+
+input {
+  border: none;
+  border-bottom: 1px dashed light-dark(black, white);
+  font-size: larger;
+  width: 96px;
+}
+
+select {
+  font-size: larger;
+}
+
+#OutputSection {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template:
+    "a a" auto
+    "b c" auto / auto 1fr;
+  gap: 1em;
+}
+
+#FormatDescription {
+  grid-area: a;
+}
+
+#TexturePreview {
+  display: grid;
+  gap: 1em;
+  grid-area: b;
+}
+
+#OutputLog {
+  margin-left: 2em;
+  grid-area: c;
+}
+
+#TexturePreview .Selected, #OutputLog .Selected {
+  font-weight: bold;
+}
