@@ -27,7 +27,6 @@ jobs:
 
     - name: Build
       run: |
-        pnpm ci
         pnpm build
 
     - name: Upload generated files as artifact
